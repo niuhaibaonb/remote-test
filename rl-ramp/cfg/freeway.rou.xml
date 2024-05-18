@@ -1,0 +1,24 @@
+<routes>
+	<vType id="vtypeauto" accel="3" decel="2" sigma="0.5" length="9"
+		   minGap="1.5" maxSpeed="30" color="1,0,0" probability="1"
+		   carFollowModel="CC" tauEngine="0.5" omegaN="0.5" xi="1" c1="0.5"
+		   lanesCount="4" ccAccel="3" ploegKp="0.2" ploegKd="0.7"
+		   ploegH="0.5" speedFactor="2" vClass="truck" emissionClass="HBEFA3/HDV"/>
+	<vType id="passenger" accel="1.5" decel="4.5" sigma="0.5" length="4"
+		   minGap="1.5" maxSpeed="33" color="random" vClass="passenger"
+		   guiShape="passenger" speedFactor="1" departSpeed="max"
+		   carFollowModel="IDM" />
+	<vType id="passenger2" accel="1.5" decel="4.5" sigma="0.5" length="4"
+		   minGap="0" maxSpeed="20" color="0.16,0.33,0.42" vClass="passenger"
+		   guiShape="passenger" speedFactor="1" departSpeed="max"
+	       carFollowModel="IDM" />
+
+
+
+
+
+	<route id="normal_route" edges="E1 E2"/>
+
+	<route id="platoon_route" edges="E0 E1 E2"/>
+	<route id="join_route" edges="E3 E1 E2"/>
+</routes>
